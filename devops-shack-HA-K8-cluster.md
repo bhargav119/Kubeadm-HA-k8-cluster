@@ -10,7 +10,8 @@ To set up a highly available Kubernetes cluster with two master nodes and three 
 
 ### Step 1: Prepare the Load Balancer Node
 
-HAProxy in a Kubernetes (K8s) cluster created with Kubeadm helps balance incoming API requests across multiple master nodes. It acts as a load balancer for the Kubernetes API server, ensuring high availability and fault tolerance. By distributing traffic evenly, HAProxy prevents any single master node from becoming a bottleneck. If one master node fails, HAProxy reroutes traffic to the remaining healthy nodes, keeping the cluster operational. This setup enhances the reliability and uptime of the Kubernetes control plane.
+   **what is HAProxy:** 
+   HAProxy in a Kubernetes (K8s) cluster created with Kubeadm helps balance incoming API requests across multiple master nodes. It acts as a load balancer for the Kubernetes API server, ensuring high availability and fault tolerance. By distributing traffic evenly, HAProxy prevents any single master node from becoming a bottleneck. If one master node fails, HAProxy reroutes traffic to the remaining healthy nodes, keeping the cluster operational. This setup enhances the reliability and uptime of the Kubernetes control plane.
 
 1. **Install HAProxy:**
    ```bash
